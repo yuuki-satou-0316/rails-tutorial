@@ -2,16 +2,8 @@ version: 2
 updates:
 - package-ecosystem: bundler
   directory: "/"
-  target-branch: zengin-code-bump
   schedule:
     interval: daily
-    time: "07:25"
-    timezone: Asia/Tokyo
   allow:
     - dependency-name: "zengin-code"
   open-pull-requests-limit: 5
-  labels:
-    - "Activate CI"
-    - "Dependencies"
-    - "ruby"
-    - "zengin-code"
