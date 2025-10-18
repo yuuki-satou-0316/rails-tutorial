@@ -7,7 +7,6 @@ updates:
   open-pull-requests-limit: 10
 - package-ecosystem: bundler
   directory: "/"
-  target-branch: "zengin_code"
   schedule:
     interval: daily
   allow:
