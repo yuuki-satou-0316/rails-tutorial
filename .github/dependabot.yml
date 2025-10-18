@@ -10,3 +10,17 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:25"
+    timezone: Asia/Tokyo
+  allow:
+    - dependency-name: "zengin-code"
+  open-pull-requests-limit: 5
+  labels:
+    - "Activate CI"
+    - "Dependencies"
+    - "ruby"
+    - "zengin-code"

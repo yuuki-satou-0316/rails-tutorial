@@ -61,3 +61,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "zengin_code", "~> 1.0", "<= 1.0.1.20250825"
