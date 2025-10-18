@@ -12,6 +12,7 @@ updates:
   open-pull-requests-limit: 10
 - package-ecosystem: bundler
   directory: "/"
+  target-branch: zengin-code-bump
   schedule:
     interval: daily
     time: "07:25"
