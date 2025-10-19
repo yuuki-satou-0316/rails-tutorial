@@ -4,14 +4,4 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  ignore:
-    - dependency-name: "zengin_code"
   open-pull-requests-limit: 10
-- package-ecosystem: bundler
-  directory: "/"
-  target-branch: "zengin-code-updates"
-  schedule:
-    interval: daily
-  allow:
-    - dependency-name: "zengin_code"
-  open-pull-requests-limit: 5
