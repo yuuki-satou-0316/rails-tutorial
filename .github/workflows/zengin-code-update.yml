@@ -63,7 +63,8 @@ jobs:
         # Gemfileを更新
         sed -i 's/gem "zengin_code",.*/gem "zengin_code", "~> '"${LATEST_VERSION}"'", "<= '"${LATEST_VERSION}"'"/' Gemfile
 
-        # bundle update実行
+        # frozen modeを無効化してbundle update実行
+        bundle config set frozen false
         bundle update zengin_code
 
         # コミット
