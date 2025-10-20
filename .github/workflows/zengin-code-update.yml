@@ -2,8 +2,8 @@ name: Auto Update zengin_code gem
 
 on:
   schedule:
-    # 毎日午前9時（JST）に実行
-    - cron: '0 0 * * *'
+    # 毎週月曜日午前9時（JST）に実行
+    - cron: '0 0 * * 1'
   workflow_dispatch: # 手動実行も可能
 
 permissions:
@@ -63,7 +63,7 @@ jobs:
         # 既存ブランチを削除（存在する場合）
         BRANCH_NAME="update-zengin-code-to-${LATEST_VERSION}"
         git push origin --delete "$BRANCH_NAME" 2>/dev/null || true
-        
+
         # ブランチ作成
         git checkout -b "$BRANCH_NAME"
 
@@ -84,7 +84,11 @@ jobs:
         # PR作成
         gh pr create \
           --title "Update zengin_code gem to ${LATEST_VERSION}" \
+          --label "Activate CI" \
           --body "$(cat <<EOF
+        @Rakushifu/tp-developers
+        @yuuki-satou-0316
+
         ## Summary
         - Update zengin_code gem from ${CURRENT_VERSION} to ${LATEST_VERSION}
 
