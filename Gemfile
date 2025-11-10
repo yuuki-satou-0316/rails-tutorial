@@ -62,4 +62,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "zengin_code", "~> 1.0", "<= 1.0.1.20250825"
+gem "zengin_code", "~> 1.0.1.20251104", "<= 1.0.1.20251104"
