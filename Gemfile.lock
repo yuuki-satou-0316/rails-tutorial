@@ -353,7 +353,7 @@ GEM
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.7.2)
-    zengin_code (1.0.1.20250825)
+    zengin_code (1.0.1.20251124)
 
 PLATFORMS
   aarch64-linux
@@ -389,7 +389,7 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   web-console
-  zengin_code (~> 1.0, <= 1.0.1.20250825)
+  zengin_code (~> 1.0.1.20251124, <= 1.0.1.20251124)
 
 BUNDLED WITH
    2.5.7
